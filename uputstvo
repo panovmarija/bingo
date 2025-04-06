@@ -1,0 +1,18 @@
+serverska aplikacija predstavlja aplikacju sa gui. 
+nakon pokretanja serverske aplikacije na glavnoj ekranskoj formi se se u 4 polja prikazuju slucajno generisano cifre od 0 do 5[]. 
+korisnik klikom nda dugme start moze pokrenuti ponovo generisanje cifara a klikom na stop prekinuti. 
+kada zeli da da pokrene igri treba da klikne na dugme pokreni.
+ 
+nakon sto korisnik pokrene igru, moze se pokrenuti klijentska aplikacija. 
+preko klijentske aplikacije korisnik pogadja cifre koje su generisane na serverskoj aplikaciji.
+
+korisnik ima mogucnost da iz 6 pokusaja pogodi tacan redosled generisanih cifara.
+Korisink unosi cifre tako sto klikom na dugme start-x (x:1-4) pokrece, a klikom na dugme stop x prekida generisanje cifre. (generisanje slucajne cifre se vrsi na strani klijenta). generisanje cifre korisnik ponavlja sve dok sistem ne generise zeljenu cifru. Nakon sto je dobio sve cifre, klijent klikom na dugme posalji salje zahtev serveru da proveri redosled cifara. Ukoliko je klijent pogodio cifru i cifra se nalazi na istom mestu, server vraca informaciju da je klijetn pogodio cifru koje se nalazi na svom mestu, a ukoliko j pogodio cifru koja nije na svom mestu, server vraca da je pogodjena cifra ali nije na svom mestu. 
+
+svaki put kada klijent klikne na dugme posalji,prethodna kombinacija cifara i odgovor servera se cuvaju i prikazuju u posebnoj komponenti.
+
+klijent je pobedio ukoliko pogodi kombinaciju iz 6 pokusaja, ili izgubio ako ne pogodi.
+
+nakon zavrsetka igre, na server programu klikom na sacuvaj igru sacuvati kolmpletnu igru sa svim potezima u bazi podataka.
+
+iz menija moje igre/pogledaj omoguciti korisniku da izabere igru koju je igrao u prethodnom periodu i pogleda koja je bila zadata kombinacija,da li je pobedio ili ne i koje je poteze povlacio(klikom na dugme detalji) kao i odgovor servera u smislu namestu/nije.
